@@ -41,7 +41,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6e60bf87b0982e04c9d9949af34e5018, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e60bf87b0982e04c9d9949af34e5018, type: 3}
       propertyPath: m_LocalScale.x
@@ -98,7 +98,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 6e60bf87b0982e04c9d9949af34e5018, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ed096e06e62c432499a19a7a2d83bcfe, type: 2}
+      objectReference: {fileID: 2100000, guid: b1c9ba845180f9642b8aa3a331398ed6, type: 2}
     - target: {fileID: 919132149155446097, guid: 6e60bf87b0982e04c9d9949af34e5018, type: 3}
       propertyPath: m_Name
       value: AnotherTurret
