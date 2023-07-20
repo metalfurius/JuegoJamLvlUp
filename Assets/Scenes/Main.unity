@@ -5938,7 +5938,7 @@ PrefabInstance:
       objectReference: {fileID: 36512656}
     - target: {fileID: 4009114339116963111, guid: 7a67fe92c76321b469f0db734e064615, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseAnotherTurret
+      value: SelectAnotherTurret
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8127,6 +8127,7 @@ GameObject:
   - component: {fileID: 1052644280}
   - component: {fileID: 1052644279}
   - component: {fileID: 1052644281}
+  - component: {fileID: 1052644282}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -8180,6 +8181,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 5366907387248879622, guid: 6507c85bfb2d7e240bc8c021302829fc, type: 3}
   anotherTurretPrefab: {fileID: 5366907387248879622, guid: 925723ccc5f3b624b9a0630bb84bba76, type: 3}
+--- !u!114 &1052644282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052644278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cd6ed188a7551479deabde3549a9d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMoney: 400
 --- !u!1001 &1052777394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16917,6 +16931,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 36512656}
+    - target: {fileID: 4009114339116963111, guid: 7a67fe92c76321b469f0db734e064615, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectStandardTurret
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
