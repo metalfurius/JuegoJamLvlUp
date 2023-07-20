@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    public TurretBlueprint standardTurret;
+    public TurretBlueprint missileTurret;
     BuildManager buildManager;
     private void Start() {
         buildManager=BuildManager.instance;
