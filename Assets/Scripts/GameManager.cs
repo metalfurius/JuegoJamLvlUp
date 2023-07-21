@@ -3,12 +3,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    bool gameEnded=false;
-    private void FixedUpdate() {
-        if(gameEnded){
+    bool gameEnded = false;
+    private void FixedUpdate()
+    {
+        if (gameEnded)
+        {
             return;
         }
-        if (PlayerStats.Lives<=0)
+        if (PlayerStats.Lives <= 0)
         {
             EndGame();
         }
@@ -16,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     private void EndGame()
     {
-        gameEnded=true;
+        gameEnded = true;
         Debug.Log("Game over");
     }
 }

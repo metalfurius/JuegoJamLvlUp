@@ -5,9 +5,9 @@ public class Bullet : MonoBehaviour
 {
     private Transform target;
     public float speed = 70f;
-    public float explosionRadius=0f;
+    public float explosionRadius = 0f;
     public GameObject impactEffect;
-    public int damage=50;
+    public int damage = 50;
     public void Seek(Transform _target)
     {
         target = _target;
@@ -28,38 +28,44 @@ public class Bullet : MonoBehaviour
             HitTarget();
             return;
         }
-        transform.Translate(dir.normalized*distanceThisFrame,Space.World);
+        transform.Translate(dir.normalized * distanceThisFrame, Space.World);
         transform.LookAt(target);
     }
 
     private void HitTarget()
     {
-        GameObject effectIns=(GameObject)Instantiate(impactEffect,transform.position,transform.rotation);
-        Destroy(effectIns,4f);
-        if (explosionRadius>0f){
+        GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+        Destroy(effectIns, 4f);
+        if (explosionRadius > 0f)
+        {
             Explode();
         }
-        else{
+        else
+        {
             Damage(target);
         }
         Destroy(gameObject);
-        Destroy(target.gameObject);
     }
 
     void Explode()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position,explosionRadius);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
         foreach (Collider collider in colliders)
         {
-            if(collider.tag=="Enemy"){
+            if (collider.tag == "Enemy")
+            {
                 Damage(collider.transform);
             }
         }
     }
 
-    void Damage (Transform enemy){
-        Enemy e=enemy.GetComponent<Enemy>();
-        e.TakeDamage(damage);
-        Destroy(enemy.gameObject);
+    void Damage(Transform enemy)
+    {
+        Enemy e = enemy.GetComponent<Enemy>();
+        if (e != null)
+        {
+            e.TakeDamage(damage);
+        }
+
     }
 }
