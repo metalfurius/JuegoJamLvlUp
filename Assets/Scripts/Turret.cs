@@ -4,6 +4,7 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     private Transform target;
+    private Enemy targetEnemy;
     [Header("Attributes")]
     public float range = 15f;
     [Header("Use Bullets (default)")]
@@ -12,8 +13,11 @@ public class Turret : MonoBehaviour
     private float fireCountdown = 0f;
     [Header("Use Laser")]
     public bool useLaser = false;
+    public int damageOverTime = 30;
+    public float slowPct=0.5f;
     public LineRenderer lineRenderer;
     public ParticleSystem impactEffect;
+    public ParticleSystem laserEffect;
 
     [Header("Unity Setup")]
     public Transform partToRotate;
@@ -46,6 +50,7 @@ public class Turret : MonoBehaviour
         if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
+            targetEnemy=nearestEnemy.GetComponent<Enemy>();
         }
         else
         {
@@ -62,6 +67,7 @@ public class Turret : MonoBehaviour
                 {
                     lineRenderer.enabled = false;
                     impactEffect.Stop();
+                    laserEffect.Stop();
                 }
             }
             return;
@@ -86,17 +92,24 @@ public class Turret : MonoBehaviour
 
     private void Laser()
     {
+        targetEnemy.TakeDamage(damageOverTime*Time.deltaTime);
+        targetEnemy.Slow(slowPct);
+
         if (!lineRenderer.enabled)
         {
             lineRenderer.enabled = true;
             impactEffect.Play();
+            laserEffect.Play();
         }
         lineRenderer.SetPosition(0, firePoint.position);
         lineRenderer.SetPosition(1, target.position);
-        
+
         Vector3 dirLaser = firePoint.position - target.position;
-        impactEffect.transform.position = target.position + dirLaser.normalized ;
+        impactEffect.transform.position = target.position + dirLaser.normalized;
         impactEffect.transform.rotation = Quaternion.LookRotation(dirLaser);
+
+        laserEffect.transform.position = firePoint.position;
+        laserEffect.transform.rotation = Quaternion.LookRotation(dirLaser);
     }
 
     private void LockOnTarget()
