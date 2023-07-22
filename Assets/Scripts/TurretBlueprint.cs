@@ -9,5 +9,9 @@ public class TurretBlueprint
     public GameObject upgradedPrefab;
     public int upgradeCost;
     public GameObject buildEffect;
+    public GameObject destroyEffect;
     public GameObject upgradeEffect;
+    public int GetSellAmount(){
+        return cost/2;
+    }
 }

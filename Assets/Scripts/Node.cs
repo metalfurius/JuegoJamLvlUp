@@ -40,6 +40,13 @@ public class Node : MonoBehaviour
     public Vector3 GetBuildPosition(){
         return transform.position+posOffset;
     }
+    public void SellTurret(){
+        PlayerStats.Money+=turretBlueprint.GetSellAmount();
+        Destroy(turret);
+        GameObject effect = (GameObject)Instantiate(turretBlueprint.destroyEffect, GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 3f);
+        turretBlueprint=null;
+    }
     void OnMouseEnter()
     {
         if(EventSystem.current.IsPointerOverGameObject()){
