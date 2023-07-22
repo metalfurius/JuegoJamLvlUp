@@ -45,27 +45,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da54596bddd21564b855a98842e68e7a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.38
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da54596bddd21564b855a98842e68e7a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.38
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da54596bddd21564b855a98842e68e7a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.38
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da54596bddd21564b855a98842e68e7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 91.59239
+      value: 74.95303
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da54596bddd21564b855a98842e68e7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.01466
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da54596bddd21564b855a98842e68e7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.589924
+      value: -8.713798
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da54596bddd21564b855a98842e68e7a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -109,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 13c8e5185d6dbff468f530d7e654280a, type: 2}
     - target: {fileID: 919132149155446097, guid: da54596bddd21564b855a98842e68e7a, type: 3}
       propertyPath: m_Name
-      value: StandardTurret
+      value: StandardTurretUpgrade
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -139,9 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8c7ba85f8a9c5a4ab93c993c4c415ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
-  bulletPrefab: {fileID: 4385834717233858484, guid: 93397160363245a49b4e577ab5d36642, type: 3}
-  fireRate: 1
+  range: 20
+  bulletPrefab: {fileID: 4385834717233858484, guid: e440fe333af00794890edbb56daa5bfc, type: 3}
+  fireRate: 1.5
   shootEffect: {fileID: 1117997381529862, guid: 7330bc113b7b8c046a76a5fcf700d1c9, type: 3}
   useLaser: 0
   damageOverTime: 30

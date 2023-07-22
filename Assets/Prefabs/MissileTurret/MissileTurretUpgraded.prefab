@@ -101,7 +101,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 924ad7dfad18d2946849570f616a1d67, type: 2}
     - target: {fileID: 919132149155446097, guid: fd9f53e917584d047a5d51fccca6465b, type: 3}
       propertyPath: m_Name
-      value: MissileTurret
+      value: MissileTurretUpgraded
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fd9f53e917584d047a5d51fccca6465b, type: 3}
       propertyPath: m_IsActive
@@ -135,9 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8c7ba85f8a9c5a4ab93c993c4c415ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 30
-  bulletPrefab: {fileID: 1311559214229084, guid: 100a87b5e960e5a49b48e191012eea36, type: 3}
-  fireRate: 0.5
+  range: 40
+  bulletPrefab: {fileID: 1311559214229084, guid: 3d25044d8d6e28546a0c03a7c89674a0, type: 3}
+  fireRate: 0.6
   shootEffect: {fileID: 1889697189104820, guid: 65089f18f96993549bbef3bd23154156, type: 3}
   useLaser: 0
   damageOverTime: 30

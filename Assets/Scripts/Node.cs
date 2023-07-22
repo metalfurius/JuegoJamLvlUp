@@ -71,6 +71,7 @@ public class Node : MonoBehaviour
         PlayerStats.Money -= blueprint.cost;
         GameObject _turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
         turret = _turret;
+        turretBlueprint=blueprint;
         GameObject effect = (GameObject)Instantiate(blueprint.buildEffect, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 2f);
 
