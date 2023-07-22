@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.25
   contrast:
     m_OverrideState: 1
     m_Value: 0
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 0.9911238, g: 1, b: 0.9009434, a: 1}
+    m_Value: {r: 0.9245283, g: 0.9245283, b: 0.9245283, a: 1}
   hueShift:
     m_OverrideState: 1
     m_Value: 0
@@ -147,10 +147,10 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.92808187, y: 0.97538, z: 1, w: 0}
+    m_Value: {x: 0.99217594, y: 1, z: 0.8946327, w: 0}
   gamma:
     m_OverrideState: 1
     m_Value: {x: 1, y: 0.958489, z: 0.9793684, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.92883027, y: 1, z: 0.98157126, w: 0}
+    m_Value: {x: 1, y: 0.9145104, z: 0.6041104, w: 0}
