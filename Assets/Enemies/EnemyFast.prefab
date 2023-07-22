@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4285586571650464895}
   - component: {fileID: -2902901428443984924}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: EnemyFast
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,7 @@ Transform:
   m_Children:
   - {fileID: 2268104487124419399}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &772611654888845262
 MeshFilter:
@@ -142,7 +142,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ed096e06e62c432499a19a7a2d83bcfe, type: 2}
+  - {fileID: 2100000, guid: b1c9ba845180f9642b8aa3a331398ed6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -197,11 +197,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8df56294e4cc845489b39a2f2f7fe320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 10
+  startSpeed: 15
   speed: 10
-  health: 100
+  startHealth: 75
   worth: 35
   deadEffect: {fileID: 4751438162064448034, guid: 00cf5a6078f11964c9a8b7b78612e2d3, type: 3}
+  healthBar: {fileID: 991058069181418104}
 --- !u!114 &-2902901428443984924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,11 +281,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 2a8025250c959d14fb8db12c9e55af5c, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0

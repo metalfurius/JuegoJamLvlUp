@@ -4,43 +4,54 @@ using TMPro;
 
 public class WaveSpawner : MonoBehaviour
 {
-    public Transform enemyPrefab;
+    public static int enemiesAlive = 0;
+    public Wave waves;
     public Transform spawnPoint;
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
     private int waveIndex = 0;
-    public float SpawnEnemyTime = 0.5f;
+    public static int roundIndex = 0;
     public TextMeshProUGUI waveCountdownText;
+    public WeightedRandomSelection random; // Asigna aquí el componente "WeightedRandomSelection"
 
     private void Update()
     {
+        if (enemiesAlive > 0)
+        {
+            return;
+        }
+
         if (countdown <= 0f)
         {
             StartCoroutine(SpawnWave());
             countdown = timeBetweenWaves;
+            return;
         }
-        countdown -= Time.deltaTime;
-        countdown=Mathf.Clamp(countdown,0f,Mathf.Infinity);
 
-        
-    }
-    private void FixedUpdate() {
-        waveCountdownText.text = string.Format("{0:00.00}",countdown);
+        countdown -= Time.deltaTime;
+        countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
+        waveCountdownText.text = string.Format("{0:00.00}", countdown);
     }
 
     IEnumerator SpawnWave()
     {
-        waveIndex++;
         PlayerStats.Rounds++;
-        for (int i = 0; i < waveIndex; i++)
+        Wave wave = waves;
+
+        for (int i = 0; i < wave.count; i++)
         {
-            SpawnEnemy();
-            yield return new WaitForSeconds(SpawnEnemyTime);
+            GameObject enemy = random.GetRandomWeightedElement(); // Obtiene un enemigo aleatorio con peso
+            SpawnEnemy(enemy);
+            yield return new WaitForSeconds(1f / wave.rate);
         }
+
+        waveIndex++;
+        roundIndex = waveIndex;
     }
 
-    private void SpawnEnemy()
+    private void SpawnEnemy(GameObject enemy)
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+        enemiesAlive++;
     }
 }
