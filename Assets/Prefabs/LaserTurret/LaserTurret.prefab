@@ -104,6 +104,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   fireRate: 0.5
   useLaser: 1
+  damageOverTime: 30
+  slowPct: 0.5
   lineRenderer: {fileID: 1186826883140952914}
   impactEffect: {fileID: 1816628341425345712}
   laserEffect: {fileID: 4377699962397456251}
@@ -151,7 +153,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 152
+  m_SortingOrder: 0
   m_Positions:
   - {x: -9.581421, y: 0, z: 6.49}
   - {x: -6.498092, y: 2.4482179, z: 19.47}

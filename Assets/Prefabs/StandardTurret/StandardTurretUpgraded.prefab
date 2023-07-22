@@ -41,7 +41,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6e60bf87b0982e04c9d9949af34e5018, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e60bf87b0982e04c9d9949af34e5018, type: 3}
       propertyPath: m_LocalScale.x
@@ -98,10 +98,10 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 6e60bf87b0982e04c9d9949af34e5018, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b1c9ba845180f9642b8aa3a331398ed6, type: 2}
+      objectReference: {fileID: 2100000, guid: ed096e06e62c432499a19a7a2d83bcfe, type: 2}
     - target: {fileID: 919132149155446097, guid: 6e60bf87b0982e04c9d9949af34e5018, type: 3}
       propertyPath: m_Name
-      value: AnotherTurret
+      value: Torreta (3) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -136,9 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8c7ba85f8a9c5a4ab93c993c4c415ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 30
-  fireRate: 0.5
+  range: 15
+  fireRate: 1
   partToRotate: {fileID: 4697471539087667900}
   rotationSpeed: 10
-  bulletPrefab: {fileID: 7417012471157935055, guid: 2d6f501b0edb6c24a821aaa07a73a4b9, type: 3}
+  bulletPrefab: {fileID: 7417012471157935055, guid: 83264a56fffeed4409a8b59ea36ffed9, type: 3}
   firePoint: {fileID: 4713601460474386013}

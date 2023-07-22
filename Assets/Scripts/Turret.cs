@@ -11,10 +11,12 @@ public class Turret : MonoBehaviour
     public GameObject bulletPrefab;
     public float fireRate = 1f;
     private float fireCountdown = 0f;
+    public GameObject shootEffect;
+
     [Header("Use Laser")]
     public bool useLaser = false;
     public int damageOverTime = 30;
-    public float slowPct=0.5f;
+    public float slowPct = 0.5f;
     public LineRenderer lineRenderer;
     public ParticleSystem impactEffect;
     public ParticleSystem laserEffect;
@@ -50,7 +52,7 @@ public class Turret : MonoBehaviour
         if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
-            targetEnemy=nearestEnemy.GetComponent<Enemy>();
+            targetEnemy = nearestEnemy.GetComponent<Enemy>();
         }
         else
         {
@@ -92,7 +94,7 @@ public class Turret : MonoBehaviour
 
     private void Laser()
     {
-        targetEnemy.TakeDamage(damageOverTime*Time.deltaTime);
+        targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
         targetEnemy.Slow(slowPct);
 
         if (!lineRenderer.enabled)
@@ -122,7 +124,9 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation * Quaternion.Euler(0, 90, 0));
+        GameObject effectshoot = (GameObject)Instantiate(shootEffect, firePoint.position, firePoint.rotation * Quaternion.Euler(0, -90, 0));
+        Destroy(effectshoot, 2f);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
         if (bullet != null)
         {

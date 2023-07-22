@@ -1,12 +1,19 @@
-using System;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    bool gameEnded = false;
+    public static bool gameIsOver;
+    public GameObject gameOverUI;
+    public TextMeshProUGUI roundsCounter;
+    private void Start() {
+        gameIsOver=false;
+    }
+    
     private void FixedUpdate()
     {
-        if (gameEnded)
+        roundsCounter.text="ROUND "+PlayerStats.Rounds.ToString()+" IN:";
+        if (gameIsOver)
         {
             return;
         }
@@ -18,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     private void EndGame()
     {
-        gameEnded = true;
-        Debug.Log("Game over");
+        gameIsOver = true;
+        gameOverUI.SetActive(true);
     }
 }

@@ -9,6 +9,10 @@ public class CameraController : MonoBehaviour
     public float maxY=80f;
     private void Update()
     {
+        if(GameManager.gameIsOver){
+            this.enabled=false;
+            return;
+        }
         if (Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panMargins)
         {
 
