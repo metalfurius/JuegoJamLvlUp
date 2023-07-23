@@ -39,6 +39,7 @@ public class EnemyMovement : MonoBehaviour
     void EndPath()
     {
         PlayerStats.Lives--;
+        AudioManager.instance.Play("LoseLife");
         WaveSpawner.enemiesAlive--;
         Destroy(gameObject);
     }

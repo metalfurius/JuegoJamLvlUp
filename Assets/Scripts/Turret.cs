@@ -68,6 +68,7 @@ public class Turret : MonoBehaviour
                 if (lineRenderer.enabled)
                 {
                     lineRenderer.enabled = false;
+                    AudioManager.instance.StopPlaying("Laser");
                     impactEffect.Stop();
                     laserEffect.Stop();
                 }
@@ -100,6 +101,7 @@ public class Turret : MonoBehaviour
         if (!lineRenderer.enabled)
         {
             lineRenderer.enabled = true;
+            AudioManager.instance.Play("Laser");
             impactEffect.Play();
             laserEffect.Play();
         }
@@ -132,6 +134,7 @@ public class Turret : MonoBehaviour
         {
             bullet.Seek(target);
         }
+        AudioManager.instance.Play("Shoot");
     }
 
     void OnDrawGizmosSelected()

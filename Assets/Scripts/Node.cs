@@ -46,6 +46,7 @@ public class Node : MonoBehaviour
         GameObject effect = (GameObject)Instantiate(turretBlueprint.destroyEffect, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 3f);
         turretBlueprint=null;
+        AudioManager.instance.Play("Sell");
     }
     void OnMouseEnter()
     {
@@ -81,6 +82,7 @@ public class Node : MonoBehaviour
         turretBlueprint=blueprint;
         GameObject effect = (GameObject)Instantiate(blueprint.buildEffect, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 2f);
+        AudioManager.instance.Play("Build");
 
     }
     public void UpgradeTurret(){
@@ -95,6 +97,7 @@ public class Node : MonoBehaviour
         turret = _turret;
         GameObject effect = (GameObject)Instantiate(turretBlueprint.buildEffect, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 2f);
+        AudioManager.instance.Play("Upgrade");
         isUpgraded=true;
     }
 }

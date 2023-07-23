@@ -37,6 +37,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        AudioManager.instance.Play("EnemyDie");
         WaveSpawner.enemiesAlive--;
         GameObject effect = (GameObject)Instantiate(deadEffect, transform.position, Quaternion.identity);
         Destroy(effect, 3f);
