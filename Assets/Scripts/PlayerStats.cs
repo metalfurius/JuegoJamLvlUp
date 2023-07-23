@@ -4,14 +4,12 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     public static int Money;
-    public int startMoney = 400;
     public static int Lives;
-    public int startLives = 20;
     public static int Rounds;
     private void Start()
     {
-        Lives = startLives;
-        Money = startMoney;
+        Lives = Random.Range(1,11);
+        Money = Random.Range(200,400);
         Rounds=0;
     }
 }

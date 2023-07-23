@@ -17120,6 +17120,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8001064552834246138, guid: 97ef8cba585baaa47b8b8eb5e9afca15, type: 3}
+      propertyPath: weightedList.Array.data[0].gameObject
+      value: 
+      objectReference: {fileID: 4838348973786079987, guid: 4eda8b0f8e2e79246869f9890e3730ca, type: 3}
+    - target: {fileID: 8001064552834246138, guid: 97ef8cba585baaa47b8b8eb5e9afca15, type: 3}
+      propertyPath: weightedList.Array.data[1].gameObject
+      value: 
+      objectReference: {fileID: 7840891666951491506, guid: 1ce5322d07d163440bdda5e69c4b8f8b, type: 3}
+    - target: {fileID: 8001064552834246138, guid: 97ef8cba585baaa47b8b8eb5e9afca15, type: 3}
+      propertyPath: weightedList.Array.data[2].gameObject
+      value: 
+      objectReference: {fileID: 2702535905388807058, guid: 2b07620c554364340beee51b728b8804, type: 3}
     - target: {fileID: 8489585983104872688, guid: 97ef8cba585baaa47b8b8eb5e9afca15, type: 3}
       propertyPath: m_RootOrder
       value: 8
