@@ -8435,6 +8435,10 @@ PrefabInstance:
       propertyPath: nodeUI
       value: 
       objectReference: {fileID: 1089337880}
+    - target: {fileID: 2276077393732095533, guid: 97ef8cba585baaa47b8b8eb5e9afca15, type: 3}
+      propertyPath: startLives
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6885704699160022743, guid: 97ef8cba585baaa47b8b8eb5e9afca15, type: 3}
       propertyPath: spawnPoint
       value: 
