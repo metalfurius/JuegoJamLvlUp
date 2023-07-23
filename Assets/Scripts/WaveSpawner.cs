@@ -35,6 +35,7 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
+        AudioManager.instance.Play("RoundStart");
         PlayerStats.Rounds++;
         Wave wave = waves;
 

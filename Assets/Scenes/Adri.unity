@@ -6454,46 +6454,34 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Sell
-    clip: {fileID: 8300000, guid: 5870b216d6bf54c47bdd9364878a095e, type: 3}
+    clip: {fileID: 8300000, guid: 203906a5ebbff8141b48174ec2eefbb0, type: 3}
     volume: 0
-    pitch: 1.54
+    pitch: 0.75
     loop: 0
     source: {fileID: 0}
   - name: Button
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 4ad0adeda2e6a4349bc2f8b1a3cde748, type: 3}
     volume: 0
-    pitch: 0
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: GameOver
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: f4d03d51e38f7584db5d42e1fbf95689, type: 3}
     volume: 0
-    pitch: 0
+    pitch: 0.7
     loop: 0
     source: {fileID: 0}
   - name: PauseMenu
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 0cdfb031e9b496641a9328062733d3e1, type: 3}
     volume: 0
-    pitch: 0
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: RoundStart
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 69a79724bbc70e141b524a14e7793680, type: 3}
     volume: 0
-    pitch: 0
+    pitch: 0.6
     loop: 0
-    source: {fileID: 0}
-  - name: Shoot
-    clip: {fileID: 8300000, guid: 1299e3107a7c345469331ad51547115b, type: 3}
-    volume: 0
-    pitch: 0.4
-    loop: 0
-    source: {fileID: 0}
-  - name: Laser
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 1
-    loop: 1
     source: {fileID: 0}
   - name: LoseLife
     clip: {fileID: 0}
@@ -8577,6 +8565,10 @@ PrefabInstance:
     - target: {fileID: 7669849091753382345, guid: 97ef8cba585baaa47b8b8eb5e9afca15, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8001064552834246138, guid: 97ef8cba585baaa47b8b8eb5e9afca15, type: 3}
+      propertyPath: roundWeightAugment
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 8001064552834246138, guid: 97ef8cba585baaa47b8b8eb5e9afca15, type: 3}
       propertyPath: weightedList.Array.data[0].gameObject
@@ -16320,6 +16312,18 @@ PrefabInstance:
     - target: {fileID: 2848671751485313461, guid: adffc9941dd159e46ab8ef257216a202, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785902015473438640, guid: adffc9941dd159e46ab8ef257216a202, type: 3}
+      propertyPath: laserTurret.upgradeCost
+      value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785902015473438640, guid: adffc9941dd159e46ab8ef257216a202, type: 3}
+      propertyPath: missileTurret.upgradeCost
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785902015473438640, guid: adffc9941dd159e46ab8ef257216a202, type: 3}
+      propertyPath: standardTurret.upgradeCost
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7016580312651383355, guid: adffc9941dd159e46ab8ef257216a202, type: 3}
       propertyPath: m_AnchorMax.y

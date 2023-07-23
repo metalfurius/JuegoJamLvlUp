@@ -9,9 +9,11 @@ public class GameOver : MonoBehaviour
         roundsText.text=PlayerStats.Rounds.ToString();
     }
     public void Retry(){
+        AudioManager.instance.Play("Button");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void Menu(){
+        AudioManager.instance.Play("Button");
         Debug.Log("Menu");
     }
 }

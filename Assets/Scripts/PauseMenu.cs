@@ -26,11 +26,14 @@ public class PauseMenu : MonoBehaviour
         }
     }
     public void Retry(){
+        AudioManager.instance.Play("Button");
         Toggle();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         WaveSpawner.enemiesAlive=0;
     }
     public void Menu(){
+        AudioManager.instance.Play("Button");
+        AudioManager.instance.StopPlaying("BGM");
         SceneManager.LoadScene(0);
         WaveSpawner.enemiesAlive=0;
     }
