@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9159131175278952908, guid: a057ff985f662894985353f428d3e78c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 21a9987776204e64bb5da5611b097c8d, type: 2}
     - target: {fileID: -8679921383154817045, guid: a057ff985f662894985353f428d3e78c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -175,10 +179,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4815152262335523322, guid: a057ff985f662894985353f428d3e78c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0c70440717ac38c46b67f94d8bfaaafb, type: 2}
     - target: {fileID: 919132149155446097, guid: a057ff985f662894985353f428d3e78c, type: 3}
       propertyPath: m_Name
       value: Woodcutter
       objectReference: {fileID: 0}
+    - target: {fileID: 1379919195818550742, guid: a057ff985f662894985353f428d3e78c, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -4973734387028869240, guid: a057ff985f662894985353f428d3e78c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -273,7 +285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756322149}
   m_LocalRotation: {x: -0, y: 0.7240109, z: -0, w: 0.68978864}
-  m_LocalPosition: {x: 17.8, y: 1, z: 59}
+  m_LocalPosition: {x: 23.5, y: 2.05, z: 57.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -376,14 +388,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3190643515483526018, guid: e33c198b4b3a9384e9b750eaaa7bf6f8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 918c787e99c984f49800e088d6698384, type: 2}
+    - target: {fileID: 636606197543093963, guid: e33c198b4b3a9384e9b750eaaa7bf6f8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 97b132cea553d8d41a9a2f84b5c2a5da, type: 2}
     - target: {fileID: 919132149155446097, guid: e33c198b4b3a9384e9b750eaaa7bf6f8, type: 3}
       propertyPath: m_Name
       value: Sunday
       objectReference: {fileID: 0}
+    - target: {fileID: 1712570572336894525, guid: e33c198b4b3a9384e9b750eaaa7bf6f8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af06187f1bb274c46a925316e433e761, type: 2}
     - target: {fileID: 5866666021909216657, guid: e33c198b4b3a9384e9b750eaaa7bf6f8, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7b4b8b8ff36105546b13cef1521a63ac, type: 2}
+    - target: {fileID: 8892986402879738128, guid: e33c198b4b3a9384e9b750eaaa7bf6f8, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 306681faba68aa14dac57650170672c0, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -615,6 +643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arsonist
       objectReference: {fileID: 0}
+    - target: {fileID: 5825603021111421629, guid: 48a188e72854a2344ad830e63ac6387d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e641c9d8670fc014a8e6031e5c494648, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
