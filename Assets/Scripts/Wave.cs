@@ -15,7 +15,7 @@ public class Wave
         {
             // Ajusta la cantidad de enemigos en función de la ronda actual (roundIndex)
             // Puedes agregar un factor de aumento multiplicativo para un aumento más significativo
-            return Mathf.RoundToInt(baseCount + (WaveSpawner.roundIndex * roundWeightAugment*10));
+            return Mathf.RoundToInt(baseCount + (WaveSpawner.roundIndex * roundWeightAugment*Random.Range(10,25)));
         }
     }
 
@@ -25,7 +25,7 @@ public class Wave
         {
             // Ajusta la tasa de aparición de enemigos en función de la ronda actual (roundIndex)
             // Puedes agregar un factor de aumento multiplicativo para un aumento más significativo
-            return baseRate + (WaveSpawner.roundIndex * roundWeightAugment);
+            return baseRate + (WaveSpawner.roundIndex * roundWeightAugment*Random.Range(1,4));
         }
     }
 }

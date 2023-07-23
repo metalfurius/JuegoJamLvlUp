@@ -5,12 +5,13 @@ public class CameraController : MonoBehaviour
     public float panSpeed = 30f;
     public float panMargins = 20f;
     public float scrollSpeed = 5000f;
-    public float minY=10f;
-    public float maxY=80f;
+    public float minY = 10f;
+    public float maxY = 80f;
     private void Update()
     {
-        if(GameManager.gameIsOver){
-            this.enabled=false;
+        if (GameManager.gameIsOver)
+        {
+            this.enabled = false;
             return;
         }
         if (Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panMargins)
@@ -36,7 +37,9 @@ public class CameraController : MonoBehaviour
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         Vector3 pos = transform.position;
         pos.y -= scroll * scrollSpeed * Time.deltaTime;
-        pos.y=Mathf.Clamp(pos.y,minY,maxY);
-        transform.position=pos;
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
+        pos.x = Mathf.Clamp(pos.x, -100, 70);
+        pos.z = Mathf.Clamp(pos.z, -96, 0);
+        transform.position = pos;
     }
 }

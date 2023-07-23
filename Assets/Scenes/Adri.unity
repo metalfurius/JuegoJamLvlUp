@@ -5286,7 +5286,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3bb5404b4336b3b47911b03383774987, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 838835719}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3bb5404b4336b3b47911b03383774987, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 838835718}
   m_SourcePrefab: {fileID: 100100000, guid: 3bb5404b4336b3b47911b03383774987, type: 3}
 --- !u!4 &214603448 stripped
 Transform:
@@ -6393,6 +6399,105 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c0a213f67cf171a43bf525670ba706fa, type: 3}
   m_PrefabInstance: {fileID: 629468458}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &277552251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 277552253}
+  - component: {fileID: 277552252}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &277552252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277552251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e207588076ef0ae4cabe5b439760a75b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BGM
+    clip: {fileID: 8300000, guid: 023f30518b5a57a4dacb4b162d0319a4, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Upgrade
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: EnemyDie
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Build
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Sell
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Button
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: PauseMenu
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: RoundStart
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &277552253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277552251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.3584714, y: 3.7835858, z: 11.9649935}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &280776057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18107,6 +18212,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3bb5404b4336b3b47911b03383774987, type: 3}
   m_PrefabInstance: {fileID: 836535158}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &838835717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3bb5404b4336b3b47911b03383774987, type: 3}
+  m_PrefabInstance: {fileID: 214603447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &838835718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838835717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac827f2f8b9c64b41ba91225eb8de617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 0.45841637, g: 0.8018868, b: 0.25342646, a: 0}
+  posOffset: {x: 0, y: 0.5, z: 0}
+  turret: {fileID: 0}
+  turretBlueprint:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedPrefab: {fileID: 0}
+    upgradeCost: 0
+    buildEffect: {fileID: 0}
+    destroyEffect: {fileID: 0}
+    upgradeEffect: {fileID: 0}
+  isUpgraded: 0
+  notEnoughMoneyColor: {r: 1, g: 0, b: 0.010215759, a: 1}
+--- !u!65 &838835719
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838835717}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.901829, y: 7.411667, z: 8.014082}
+  m_Center: {x: -0.0050091743, y: -3.5555787, z: 0.03635025}
 --- !u!4 &839404965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6540713327aa47a46bb62ebba517e053, type: 3}
@@ -38652,7 +38808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6796755192388947162, guid: fb1fdd68aefd97e4082990d6417d6ff4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -71.73
+      value: -110.8
       objectReference: {fileID: 0}
     - target: {fileID: 6796755192388947162, guid: fb1fdd68aefd97e4082990d6417d6ff4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44447,7 +44603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938858186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -89.65662, y: -132.5949, z: 30.136446}
+  m_LocalPosition: {x: -89.65662, y: -134.09, z: 30.136446}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
