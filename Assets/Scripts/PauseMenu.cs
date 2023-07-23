@@ -28,8 +28,10 @@ public class PauseMenu : MonoBehaviour
     public void Retry(){
         Toggle();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        WaveSpawner.enemiesAlive=0;
     }
     public void Menu(){
         SceneManager.LoadScene(0);
+        WaveSpawner.enemiesAlive=0;
     }
 }

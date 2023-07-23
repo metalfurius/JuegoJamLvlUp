@@ -27,5 +27,6 @@ public class GameManager : MonoBehaviour
     {
         gameIsOver = true;
         gameOverUI.SetActive(true);
+        WaveSpawner.enemiesAlive=0;
     }
 }

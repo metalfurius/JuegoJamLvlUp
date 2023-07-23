@@ -120,15 +120,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e5b1a24b048c6d4ca0f20c8d2a74500, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e5b1a24b048c6d4ca0f20c8d2a74500, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e5b1a24b048c6d4ca0f20c8d2a74500, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e5b1a24b048c6d4ca0f20c8d2a74500, type: 3}
       propertyPath: m_LocalPosition.x
@@ -226,7 +226,7 @@ MonoBehaviour:
   shootEffect: {fileID: 96834971240812323, guid: fdfadaef734ed5b438a067808e3b2eca, type: 3}
   useLaser: 1
   damageOverTime: 40
-  slowPct: 0.75
+  slowPct: 0.5
   lineRenderer: {fileID: 4864608988480590250}
   impactEffect: {fileID: 6910030590027545125}
   laserEffect: {fileID: 9010697859826240930}
